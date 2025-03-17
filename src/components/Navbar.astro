@@ -1,0 +1,20 @@
+---
+import Github from "@assets/icons/github.astro";
+import Email from "@assets/icons/email.astro";
+import ContainerHover from "@components/ContainerHover.astro";
+---
+
+<nav class="w-full flex justify-between items-center">
+  <a
+    class="text-xl text-zinc-100 hover:underline"
+    href="https://github.com/zjom/site">@zjom</a
+  >
+  <div class="flex gap-3 items-center">
+    <ContainerHover link="mailto:admin@zihanjin.com">
+      <Email />
+    </ContainerHover>
+    <ContainerHover link="https://github.com/zjom">
+      <Github />
+    </ContainerHover>
+  </div>
+</nav>
